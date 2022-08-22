@@ -17,6 +17,29 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <style>
+        :root {
+            --primary-color: #181617;
+            --primary-color-text: #FFFFFF
+        }
+
+        .header-background-color {
+            background-color: var(--primary-color);
+        }
+
+        @keyframes fa-blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 0; }
+ }
+
+        .fa-blink {
+            -webkit-animation: fa-blink .99s linear infinite;
+            -moz-animation: fa-blink .99s linear infinite;
+            -ms-animation: fa-blink .99s linear infinite;
+            -o-animation: fa-blink .99s linear infinite;
+            animation: fa-blink .99s linear infinite;
+        }
+
         .img-bottle img {
             height: 15em;
             width: auto;
@@ -40,12 +63,18 @@
             border-radius: 0px;
         }
 
+        .btn-primary-color {
+            background-color: var(--primary-color);
+            color: var(--primary-color-text);
+        }
+
         .btn-header {
-            background: rgb(25, 135, 84);
+            background: gold;
             border-radius: 2px;
             border: 1px solid yellow;
-            color: yellow;
+            color: black;
             padding: 2px 20px 2px 20px;
+            font-size: 10px;
         }
 
         .btn-header:hover {
@@ -96,15 +125,15 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
-    <nav class="header-offer fixed-top bg-success">
+    <nav class="header-offer fixed-top header-background-color">
         <div class="d-flex justify-content-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <span class="text-light header-text">BUY 6 BOTTLES AND SAVE $120</span>
-                <span id="header-minutes" class="text-light header-time"></span>
+                <span id="header-minutes" class="text-light header-time fa-blink"></span>
             </div>
             <div class="header-btn">
                 <a href="https://hop.clickbank.net/?affiliate=josigomes&vendor=primalflow&cbpage=noauex&tid=btnActNow#oder-add-to-cart">
-                    <button type="button" class="btn-header">Act Now</button>
+                    <button type="button" class="btn-header">GET MY DISCOUNT</button>
                 </a>
             </div>
         </div>
@@ -112,7 +141,6 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mt-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Primal Flow PX7</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -136,7 +164,7 @@
     <div class="container-fluid" style="margin-top: 140px;">
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="display-5 text-primary lead">Primal Flow PX7™ Store</h2>
+                <h2 class="display-5 lead">PX7 Primal Flow Official</h2>
             </div>
         </div>
 
@@ -150,7 +178,7 @@
                         <h2 class="text-center">
                             One Simple Way To Maintain The Health Of Your Prostate
                         </h2>
-                        <p class="lead text-info"><strong>Boost your energy, vitality, sex drive and erection</strong>
+                        <p class="lead text-warning"><strong>Boost your energy, vitality, sex drive and erection</strong>
                         </p>
                         <hr>
                         <h5>
@@ -160,7 +188,7 @@
                         <div class="d-grid gap-2 col-lg-7 mx-auto">
                             <a
                                 href="https://hop.clickbank.net/?affiliate=josigomes&vendor=primalflow&cbpage=noauex&tid=topo#oder-add-to-cart">
-                                <button class="btn btn-lg btn-danger" type="button">ACCESS OFFICIAL WEBSITE</button>
+                                <button class="btn btn-lg btn-primary-color" type="button">ACCESS OFFICIAL WEBSITE</button>
                             </a>
                             <p class="lead mt-4"><strong>Trusted by 37,503 Highly Satisfied Men</strong></p>
                         </div>
@@ -351,7 +379,7 @@
                 <img src="https://javaburn.com/_nuxt/img/money-back.322a35f.png" alt="Img guarantee">
             </div>
             <div class="col my-auto">
-                <h2 class="text-center text-primary mt-4">Backed By 60 day Money Back Guarantee.</h2>
+                <h2 class="text-center mt-4">60 Days Money Back Guarantee.</h2>
                 <p class="fs-5 fw-light text-justify mt-3">Primal Flow PX7 supplement This product is backed by a
                     <strong>100%
                         money back guarantee for 60
@@ -366,7 +394,7 @@
                 <div class="d-grid gap-2 col-lg-7 mx-auto mt-5">
                     <a
                         href="https://hop.clickbank.net/?affiliate=josigomes&vendor=primalflow&cbpage=noauex&tid=guarantee">
-                        <button class="btn btn-lg btn-danger" type="button">ACCESS OFFICIAL WEBSITE</button>
+                        <button class="btn btn-lg btn-primary-color" type="button">ACCESS OFFICIAL WEBSITE</button>
                     </a>
                 </div>
             </div>
