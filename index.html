@@ -61,6 +61,8 @@
         .btn {
             padding: 20px;
             border-radius: 0px;
+            font-size: 0.8em;
+            border-radius: 6px;
         }
 
         .btn-primary-color {
@@ -105,9 +107,19 @@
             font-size: 14px !important;
         }
 
+        .made-logo img {
+            width: 100px;
+            position: absolute;
+            bottom: -200px;
+        }
+
         /* Extra small devices (phones, 600px and down) */
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
+            .btn {
+                font-size: 1em;
+            }
+
             .img-bottle img {
                 height: 30em;
                 width: auto;
@@ -116,6 +128,13 @@
             .fda-icons img {
                 width: 40em;
             }
+
+            .made-logo img {
+                width: 150px;
+                position: absolute;
+                right: 150px;
+                top: 500px;
+        }
         }
     </style>
 </head>
@@ -161,28 +180,17 @@
         </div>
     </nav>
 
-    <div class="container-fluid" style="margin-top: 140px;">
-        <div class="row text-center">
-            <div class="col-12">
-                <h2 class="display-5 lead">PX7 Primal Flow Official</h2>
-            </div>
-        </div>
-
+    <div class="container-fluid" style="margin-top: 140px; ">
         <div class="d-flex flex-column flex-lg-row mt-5 text-center">
-            <div class="col img-bottle">
-                <img src="./bottle.jpeg" class="img-responsive" alt="...">
-            </div>
             <div class="col my-auto mx-5">
                 <div class="container">
                     <div class="row mt-5">
                         <h2 class="text-center">
                             One Simple Way To Maintain The Health Of Your Prostate
                         </h2>
+                        <hr>
                         <p class="lead text-warning"><strong>Boost your energy, vitality, sex drive and erection</strong>
                         </p>
-                        <hr>
-                        <h5>
-                            Try <strong>60 days</strong> Primal Flow PX7 For Only <strong>$49/Per Bottle</strong></h5>
                     </div>
                     <div class="row mt-5">
                         <div class="d-grid gap-2 col-lg-7 mx-auto">
@@ -195,6 +203,12 @@
                     </div>
                 </div>
             </div>
+            <div class="col img-bottle">
+                <img src="./bottle.jpeg" class="img-responsive" alt="...">
+            </div>
+            <div class="made-logo">
+                <img src="./usa.png" alt="made in the usa">
+            </div>
         </div>
     </div>
 
@@ -203,7 +217,7 @@
             <img src="./icons-fda.jpeg">
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container">
         <div class="row text-center">
             <div class="col">
                 <h2><strong>Introducing Primal Flow PX7</strong></h2>
